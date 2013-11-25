@@ -2,7 +2,7 @@
 language: scala
 scala:
   - 2.10.2
-env: PYTHON_VER=`python -c \\"import sys; print(sys.version_info[0])\\"`]) DB=mongodb SBT_OPTS="-XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:PermSize=256M -XX:MaxPermSize=512M"
+env: PYTHON_VER=`python -c "import sys; print(sys.version_info[0])"` DB=mongodb SBT_OPTS="-XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:PermSize=256M -XX:MaxPermSize=512M"
 branches:
   only:
     - master
